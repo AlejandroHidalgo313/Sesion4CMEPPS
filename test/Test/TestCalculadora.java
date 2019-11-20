@@ -35,14 +35,12 @@ public class TestCalculadora {
     public void testSuma()
     {
         assertEquals(5,Calculadora.suma(2,3));
-        assertEquals(3,Calculadora.suma(2,3));
     }
     
     @Test
     public void testResta()
     {
-        assertEquals(5,Calculadora.resta(3,2));
-        assertEquals(1,Calculadora.resta(3,2));
+        assertEquals(2,Calculadora.resta(3,2));
     }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
