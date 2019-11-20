@@ -40,7 +40,7 @@ public class TestCalculadora {
     @Test
     public void testResta()
     {
-        assertEquals(2,Calculadora.resta(3,2));
+        assertEquals(1,Calculadora.resta(3,2));
     }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
