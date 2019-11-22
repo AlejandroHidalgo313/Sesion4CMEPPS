@@ -13,5 +13,25 @@ import java.util.List;
  * @author Alejandro
  */
 public class Cuenta {
-   
+   private String mNumero;
+    private String nTitular;
+    private double saldo;
+    
+    public Cuenta(String numero, String titular){
+        mNumero=numero;
+        nTitular=titular;
+        saldo=0;
+    }
+    
+    public void Ingresar(double x){
+        saldo = saldo+x;
+    }
+    
+    public void Retirar(double x){
+        saldo=saldo-x;
+    }
+    
+    public double getSaldo(){
+        return saldo;
+    }
 }

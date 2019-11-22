@@ -1,9 +1,12 @@
+package Test;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
+import cuenta.Cuenta;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -12,16 +15,16 @@ import org.junit.Before;
 
 /**
  *
- * @author usuario
+ * @author Alejandro
  */
-public class CuentaTest {
+public class TestCuenta {
     private static Cuenta c;
     
-    public CuentaTest() {
+    public TestCuenta() {
     }
     
-    @Before
-    public void setUp() {
+    @BeforeClass
+    public static void setUp() {
         System.out.println("Set up");
         c = new Cuenta("0001.0002.12.1234567890","Fulano de Tal");
     }
@@ -33,7 +36,7 @@ public class CuentaTest {
     @Test
     public void testIngresar(){
         System.out.println("Ingresar test");
-        c.Ingresar(1000.0);
+        c.Ingresar(2000.0);
         assertTrue(c.getSaldo()==1000.0);
     }
     
